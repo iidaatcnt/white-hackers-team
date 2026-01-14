@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# White Hackers Team (WHSL)
+### Financial Logic Simulator for Future Security Engineers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+「White Hackers Team」は、千葉県白井市を拠点とする次世代の技術者育成を目的とした、インタラクティブな資産運用シミュレーションアプリです。
 
-Currently, two official plugins are available:
+## 🎯 プロジェクトの狙い
+このアプリは、10代の生徒が**「論理的思考（アルゴリズム）」**と**「マネーリテラシー（経済の仕組み）」**を遊びながら学べるように設計されています。「ホワイトハッカー（正義の技術者）」として、システム上のリソース（コイン）をいかに論理的に管理し、増やすことができるかを競います。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 主な特徴
+- **自動投資戦略（ロジック構築）**: `src/strategies.ts` を書き換えることで、自分のキャラクターの行動ロジックをプログラミングできます。
+- **ボードゲーム形式**: 桃太郎電鉄のような親しみやすいルールで、投資のリスクとリターンを直感的に学べます。
+- **ホワイトハッカー・スタイル**: 白を基調としたクリーンでサイバーなデザイン。白井市（Shiroi）の「白」と「ホワイトハッカー」を掛け合わせたオリジナルブランドです。
+- **オープンなソースコード**: 生徒が自由に構造を理解し、カスタマイズしやすいシンプルなReactコードで構築されています。
 
-## React Compiler
+## 🛠 カスタマイズ方法（生徒向け）
+1. `src/strategies.ts` を開きます。
+2. `runStrategy` 関数の中身を書き換えてみましょう。
+   - 「もしお金が〇〇以上なら〜」
+   - 「もし特定のマスに止まったら〜」
+3. 自分の作ったロジックでAIと対戦し、どちらがより資産を増やせるか検証します。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📋 セットアップ
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+© 2026 White Hackers Team
+Developed for Programming Classroom Training.
