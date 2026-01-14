@@ -111,9 +111,12 @@ export default function App() {
       const timer = setTimeout(() => {
         // AIの戦略を実行（生徒がここをカスタマイズする）
         const decision = runStrategy(currentPlayer, { players, currentPlayerIndex: currentPlayerIdx, board: BOARD_DATA });
-        if (decision.action === 'INVEST') {
-          // 将来的に手動判断と切り替えるためのトリガー
+
+        // 戦略の理由をログに表示（半学半教：ロジックの可視化）
+        if (decision.reason) {
+          addLog(`[AI思考] ${decision.reason}`);
         }
+
         rollDice();
       }, 1500);
       return () => clearTimeout(timer);
