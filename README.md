@@ -26,5 +26,14 @@ npm run dev
 ```
 
 ---
+
+## 🍃 「砂場」と「遊び場」の哲学
+私たちは、学びを単なる知識の習得ではなく、「生きる楽しみ」に変えることを目指しています。
+- **砂場 (Sandbox)**: 試行錯誤を繰り返し、自分だけのロジックを磨き上げる場所。
+- **遊び場 (Play Space)**: 自分の作ったアルゴリズムを解き放ち、チームと繋がる場所。
+
+このアプリが、君たちにとって最高の「遊び場」となりますように。
+
+---
 © 2026 White Hackers Team
-Developed for Programming Classroom Training.
+Developed with the spirit of "Living Joy" through Logic.
